@@ -18,6 +18,11 @@
     src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "SourceSansLight";
+    src: url("./fonts/SourceSansPro-Light.ttf") format("truetype");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -25,11 +30,17 @@ body {
     margin: 0;
 }
 li {
-    list-style-type: none;
+    /*list-style-type: none;*/
+}
+a {
+    cursor: pointer;
 }
 
 .empty {
  width: 100px;
+}
+.logo__black {
+    fill: black;
 }
 
 .main__wrapper {
@@ -51,7 +62,7 @@ li {
     position: relative;
     height: 794px;
     padding: 60px 135px 0 135px;
-    background: orange;
+    background: linear-gradient(0deg, #FB923B, #FAA235 90%);
     overflow: hidden;
     z-index: 10;
 }
@@ -394,4 +405,323 @@ li {
 
 .when__duration {
     padding-top: 200px;
+}
+
+/* WHO */
+
+.who__container {
+    padding: 60px 135px 40px 135px;
+    background-color: white;
+}
+
+.who__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.who__title {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: black;
+
+    transform: translateX(5px);
+
+}
+
+.who__text {
+    color: black;
+
+    font-family: "SourceSansPro";
+    font-size: 19px;
+
+}
+.who__button__wrapper {
+    display: grid;
+    justify-items: center;
+    padding-top: 83px;
+}
+
+.who__button {
+    padding: 20px 50px 20px 50px;
+
+    background: #FF7E03;
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+/*  GET READY */
+
+.ready__container {
+    padding: 60px 135px 40px 135px;
+    background: linear-gradient(0deg, #FB923B, #FAA235 90%);
+}
+
+.ready__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ready__title {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: white;
+
+    transform: translateX(15px);
+
+
+
+
+}
+
+.ready__text {
+    color: white;
+
+    font-family: "SourceSansPro";
+    font-size: 19px;
+
+}
+
+.ready__content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.ready__content__text {
+    font-family: 'SourceSansPro';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    color: white;
+}
+
+.ready__list {
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.ready__item {
+    font-family: 'FiraSansReg';
+    font-size: 32px;
+    color: white;
+    margin-left: 147px;
+}
+.ready__item:nth-child(1) {
+    margin-left: 0;
+}
+
+.ready__item__title {
+    font-family: 'FiraSansReg';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: white;
+
+}
+
+.ready__item__content {
+    font-family: 'SourceSansPro';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.03653847426176071px;
+    text-align: left;
+
+}
+
+.ready__link {
+    color: white;
+}
+
+.ready__bottom__button__wrapper {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.ready__bottom__button {
+    padding: 21px 55px 21px 55px;
+    background-color: white;
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: black;
+
+}
+
+/* ORGANIZER */
+.organizer__container {
+    padding: 60px 135px 0 135px;
+}
+
+.organizer__top__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organizer__top__bar__text {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+
+    color: #4A4A4A;
+
+    transform: translateX(10px);
+
+
+}
+
+.organizer__button {
+    padding: 14px 40px 14px 40px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+
+    font-family: "OpenSans";
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.organizer__content__wrapper {
+    padding-top: 105px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.organizer__content {
+    font-family: 'SourceSansLight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.organizer__content__bar {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organizer__bar__socials {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organizer__margin {
+    margin-right: 26px;
+}
+
+.organizer__bottom_bar__text {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.organizer__bar__button__wrapper {
+    padding: 13px 32px 13px 32px;
+
+    background-color: #FF7E03;
+}
+
+.organizer__bar__button {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.footer__container {
+    margin-top: 137px;
+    padding: 0 135px 0 135px;
+    margin-bottom: 30px;
+}
+
+.footer__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'SourceSansPro';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.email {
+    font-family:  'SourceSansPro';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: right;
+
+    color: #FF7E03;
 }
