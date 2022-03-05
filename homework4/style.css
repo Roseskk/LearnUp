@@ -1,0 +1,727 @@
+@font-face {
+    font-family: 'FiraSans';
+    src: url('./fonts/FiraSans-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSansReg';
+    src: url("./fonts/FiraSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansLight";
+    src: url("./fonts/SourceSansPro-Light.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+li {
+    /*list-style-type: none;*/
+}
+a {
+    cursor: pointer;
+}
+
+.empty {
+ width: 100px;
+}
+.logo__black {
+    fill: black;
+}
+
+.main__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.head__human {
+    width: 1100px;
+    height: 100%;
+    position: absolute;
+    background: url("img/head__img.png");
+    background-repeat: no-repeat;
+    background-position: left,bottom;
+    transform: translate(25px,3px);
+    z-index: -12;
+    object-fit: cover;
+}
+.head__container {
+    position: relative;
+    height: 794px;
+    padding: 60px 135px 0 135px;
+    background: linear-gradient(0deg, #FB923B, #FAA235 90%);
+    overflow: hidden;
+    z-index: 10;
+}
+.head__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head__bar__text {
+    color: white;
+
+    font-family: "SourceSansPro";
+    font-size: 19px;
+}
+.head__content {
+    height: 100%;
+    padding-top: 70px;
+}
+
+.head__content__wrapper {
+    padding-top: 50px;
+}
+
+.head__content__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head__content__bar__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.head__content__bar__img {
+    width: 100px;
+    height: 110px;
+}
+
+.head__content__bar__text {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+
+    font-family: "SourceSansPro";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.head__content__text__block {
+   width: 600px;
+   margin: 0 auto;
+   text-align: center;
+   z-index: 200;
+}
+.Choose {
+    font-family: "OpenSans";
+    color: white;
+
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: 0.845em;
+    text-align: center;
+
+}
+.Flutter {
+    display: block;
+    font-family: "FiraSans";
+    font-weight: 800;
+
+    color: white;
+    font-size: 128px;
+    font-style: normal;
+    line-height: 154px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+.Both {
+
+    font-family: "OpenSans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 49px;
+    letter-spacing: 0.37em;
+    text-align: center;
+
+    color: white;
+
+}
+.head__button__container {
+    position: absolute;
+    bottom: 85px;
+    left: 42%;
+}
+.head__button {
+    padding: 21px 55px 21px 55px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+    font-family: "OpenSans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+/* workshop */
+
+.workshop__container {
+    padding: 60px 135px 0 135px;
+}
+
+.workshop__top__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workshop__top__bar__text {
+    font-family: "FiraSansReg";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: #4A4A4A;
+
+
+}
+
+.workshop__button {
+    padding: 14px 40px 14px 40px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+
+    font-family: "OpenSans";
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.workshop__content {
+    margin: 0 auto;
+    padding-top: 111px;
+    width: 700px;
+}
+
+.workshop__content__text {
+    font-family: "SourceSansPro";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.workshop__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 70px;
+
+}
+.workshop__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+}
+.workshop__item__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workshop__item__text {
+    font-family: 'FiraSans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: -0.03665158897638321px;
+    text-align: center;
+
+    color: #FF7E03;
+}
+
+.workshop__item__content__text {
+
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.0326923169195652px;
+    text-align: left;
+
+
+    color: #4A4A4A;
+}
+
+/* WHEN CONTAINER */
+.when__container {
+    padding: 60px 135px 40px 135px;
+    background-color: #353535;
+}
+
+.when__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.where__title {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: white;
+
+}
+
+.where__button {
+    border: 1px solid white;
+    padding: 14px 40px 14px 40px;
+    color: white;
+
+    font-family: 'OpenSans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    text-decoration: none;
+
+}
+.block {
+    display: block;
+
+    margin-top: 10px;
+}
+.when__border {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 30px;
+
+    border: 1px solid white;
+}
+.when__location__date__wrapper {
+
+}
+.where__border__title {
+    font-family: 'FiraSans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: white;
+
+}
+.when__padding {
+    padding-top: 33px;
+}
+.sub {
+    font-family: 'FiraSansReg';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.032692309468984604px;
+    text-align: left;
+
+    color: white;
+}
+
+.where__border__subtitle {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: -0.032692309468984604px;
+    text-align: left;
+
+    color: white;
+
+}
+
+.when__date {
+    padding-top: 44px;
+}
+.when__subtitle {
+    font-family: 'SourceSansPro';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 13.277778625488281px;
+    text-align: left;
+
+    color: white;
+
+}
+
+.when__title {
+    font-family: 'SourceSansPro';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 121px;
+    letter-spacing: -0.08717949688434601px;
+    text-align: left;
+
+    color: white;
+
+}
+
+.when__duration {
+    padding-top: 200px;
+}
+
+/* WHO */
+
+.who__container {
+    padding: 60px 135px 40px 135px;
+    background-color: white;
+}
+
+.who__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.who__title {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: black;
+
+    transform: translateX(5px);
+
+}
+
+.who__text {
+    color: black;
+
+    font-family: "SourceSansPro";
+    font-size: 19px;
+
+}
+.who__button__wrapper {
+    display: grid;
+    justify-items: center;
+    padding-top: 83px;
+}
+
+.who__button {
+    padding: 20px 50px 20px 50px;
+
+    background: #FF7E03;
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+/*  GET READY */
+
+.ready__container {
+    padding: 60px 135px 40px 135px;
+    background: linear-gradient(0deg, #FB923B, #FAA235 90%);
+}
+
+.ready__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ready__title {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: white;
+
+    transform: translateX(15px);
+
+
+
+
+}
+
+.ready__text {
+    color: white;
+
+    font-family: "SourceSansPro";
+    font-size: 19px;
+
+}
+
+.ready__content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.ready__content__text {
+    font-family: 'SourceSansPro';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    color: white;
+}
+
+.ready__list {
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.ready__item {
+    font-family: 'FiraSansReg';
+    font-size: 32px;
+    color: white;
+    margin-left: 147px;
+}
+.ready__item:nth-child(1) {
+    margin-left: 0;
+}
+
+.ready__item__title {
+    font-family: 'FiraSansReg';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: white;
+
+}
+
+.ready__item__content {
+    font-family: 'SourceSansPro';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.03653847426176071px;
+    text-align: left;
+
+}
+
+.ready__link {
+    color: white;
+}
+
+.ready__bottom__button__wrapper {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.ready__bottom__button {
+    padding: 21px 55px 21px 55px;
+    background-color: white;
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: black;
+
+}
+
+/* ORGANIZER */
+.organizer__container {
+    padding: 60px 135px 0 135px;
+}
+
+.organizer__top__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organizer__top__bar__text {
+    font-family: 'FiraSansReg';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+
+
+    color: #4A4A4A;
+
+    transform: translateX(10px);
+
+
+}
+
+.organizer__button {
+    padding: 14px 40px 14px 40px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+
+    font-family: "OpenSans";
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.organizer__content__wrapper {
+    padding-top: 105px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.organizer__content {
+    font-family: 'SourceSansLight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.organizer__content__bar {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organizer__bar__socials {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organizer__margin {
+    margin-right: 26px;
+}
+
+.organizer__bottom_bar__text {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.organizer__bar__button__wrapper {
+    padding: 13px 32px 13px 32px;
+
+    background-color: #FF7E03;
+}
+
+.organizer__bar__button {
+    font-family: 'SourceSansPro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.footer__container {
+    margin-top: 137px;
+    padding: 0 135px 0 135px;
+    margin-bottom: 30px;
+}
+
+.footer__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'SourceSansPro';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.email {
+    font-family:  'SourceSansPro';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: right;
+
+    color: #FF7E03;
+}
