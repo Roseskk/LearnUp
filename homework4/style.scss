@@ -1,97 +1,71 @@
-@font-face {
-  font-family: "FiraSans";
-  src: url("./fonts/FiraSans-Black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "FiraSansReg";
-  src: url("./fonts/FiraSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "SourceSansPro";
-  src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "SourceSansLight";
-  src: url("./fonts/SourceSansPro-Light.ttf") format("truetype");
-}
+@import "variables";
+@import "fonts";
+
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
 }
-
 li {
   /*list-style-type: none;*/
 }
-
 a {
   cursor: pointer;
 }
 
 .button {
   padding: 21px 55px 21px 55px;
-  color: black;
+  color: $third;
   transition: all 0.3s ease-in-out;
-}
-.button:hover {
-  background-color: black;
-  color: white;
+
+  &:hover {
+   background-color: black;
+   color: white;
+  }
 }
 
 .empty {
   width: 100px;
 }
-
 .logo__black {
-  fill: black;
+  fill: $third;
 }
 
 .main__wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 .head__human {
   width: 1100px;
   height: 100%;
   position: absolute;
   background: url("img/head__img.png");
   background-repeat: no-repeat;
-  background-position: left, bottom;
-  transform: translate(25px, 3px);
+  background-position: left,bottom;
+  transform: translate(25px,3px);
   z-index: -12;
   object-fit: cover;
 }
-
 .head__container {
   position: relative;
   height: 794px;
-  padding: 60px 135px 0 135px;
-  background: linear-gradient(0, #FB923B, #FAA235 90%);
+  padding: $savePadding;
+  background: $primary;
   overflow: hidden;
   z-index: 10;
 }
-
 .head__bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .head__bar__text {
-  color: #FFF;
-  font-family: "SourceSansPro";
+  color: $secondary;
+
+  font-family: $SourceSansPro;
   font-size: 19px;
 }
-
 .head__content {
   height: 100%;
   padding-top: 70px;
@@ -119,9 +93,10 @@ a {
 
 .head__content__bar__text {
   padding-top: 15px;
-  color: #FFF;
+  color: $secondary;
   text-align: center;
-  font-family: "SourceSansPro";
+
+  font-family: $SourceSansPro;
   font-size: 24px;
   font-weight: 700;
 }
@@ -132,62 +107,67 @@ a {
   text-align: center;
   z-index: 200;
 }
-
 .Choose {
-  font-family: "OpenSans";
-  color: #FFF;
+  font-family: $OpenSans;
+  color: $secondary;
+
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 76px;
   letter-spacing: 0.845em;
   text-align: center;
-}
 
+}
 .Flutter {
   display: block;
-  font-family: "FiraSans";
+  font-family: $FiraSans;
   font-weight: 800;
-  color: #FFF;
+
+  color: $secondary;
   font-size: 128px;
   font-style: normal;
   line-height: 154px;
   letter-spacing: 0px;
   text-align: center;
-}
 
+}
 .Both {
-  font-family: "OpenSans";
+
+  font-family: $OpenSans;
   font-size: 36px;
   font-style: normal;
   font-weight: 800;
   line-height: 49px;
   letter-spacing: 0.37em;
   text-align: center;
-  color: #FFF;
-}
 
+  color: $secondary;
+
+}
 .head__button__container {
   position: absolute;
   bottom: 85px;
   left: 42%;
 }
-
 .head__button {
-  background-color: #FFF;
+  background-color: $secondary;
   text-decoration: none;
-  font-family: "OpenSans";
+
+  font-family: $OpenSans;
   font-size: 17px;
   font-style: normal;
   font-weight: 800;
   line-height: 23px;
   letter-spacing: 0px;
   text-align: center;
+
 }
 
 /* workshop */
+
 .workshop__container {
-  padding: 60px 135px 0 135px;
+  padding: $savePadding;
 }
 
 .workshop__top__bar {
@@ -197,23 +177,27 @@ a {
 }
 
 .workshop__top__bar__text {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 6px;
   text-align: center;
+
   color: #4A4A4A;
+
+
 }
 
 .workshop__button {
   padding: 14px 40px 14px 40px;
-  background-color: #FFF;
-  border: 1px solid black;
-  color: black;
+  background-color: $secondary;
+  border: 1px solid $third;
+  color: $third;
   text-decoration: none;
-  font-family: "OpenSans";
+
+  font-family: $OpenSans;
   font-size: 17px;
   font-weight: 800;
 }
@@ -225,28 +209,28 @@ a {
 }
 
 .workshop__content__text {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-}
 
+}
 .workshop__cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 70px;
-}
 
+  padding-top: 70px;
+
+}
 .workshop__item {
   display: flex;
   flex-direction: column;
   max-width: 330px;
 }
-
 .workshop__item__top {
   display: flex;
   flex-direction: column;
@@ -254,30 +238,34 @@ a {
 }
 
 .workshop__item__text {
-  font-family: "FiraSans";
+  font-family: $FiraSans;
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
   line-height: 29px;
-  letter-spacing: -0.036651589px;
+  letter-spacing: -0.03665158897638321px;
   text-align: center;
+
   color: #FF7E03;
 }
 
 .workshop__item__content__text {
-  font-family: "SourceSansPro";
+
+  font-family: $SourceSansPro;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.0326923169px;
+  letter-spacing: -0.0326923169195652px;
   text-align: left;
+
+
   color: #4A4A4A;
 }
 
 /* WHEN CONTAINER */
 .when__container {
-  padding: 60px 135px 40px 135px;
+  padding: $saveBottomPadding;
   background-color: #353535;
 }
 
@@ -288,105 +276,118 @@ a {
 }
 
 .where__title {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 6px;
   text-align: center;
-  color: #FFF;
+
+  color: $secondary;
+
 }
 
 .where__button {
-  border: 1px solid #FFF;
+  border: 1px solid $secondary;
   padding: 14px 40px 14px 40px;
-  color: #FFF;
-  font-family: "OpenSans";
+  color: $secondary;
+
+  font-family: $OpenSans;
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 0px;
   text-align: center;
-  text-decoration: none;
-}
 
+  text-decoration: none;
+
+}
 .block {
   display: block;
+
   margin-top: 10px;
 }
-
 .when__border {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
   padding: 30px;
-  border: 1px solid #FFF;
-}
 
+  border: 1px solid $secondary;
+}
+.when__location__date__wrapper {
+
+}
 .where__border__title {
-  font-family: "FiraSans";
+  font-family: $FiraSans;
   font-size: 48px;
   font-style: normal;
   font-weight: 800;
   line-height: 58px;
   letter-spacing: 0px;
   text-align: left;
-  color: #FFF;
-}
 
+  color: $secondary;
+
+}
 .when__padding {
   padding-top: 33px;
 }
-
 .sub {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: -0.0326923095px;
+  letter-spacing: -0.032692309468984604px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
 }
 
 .where__border__subtitle {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 43px;
-  letter-spacing: -0.0326923095px;
+  letter-spacing: -0.032692309468984604px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
+
 }
 
 .when__date {
   padding-top: 44px;
 }
-
 .when__subtitle {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 13.2777786255px;
+  letter-spacing: 13.277778625488281px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
+
 }
 
 .when__title {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 96px;
   font-style: normal;
   font-weight: 700;
   line-height: 121px;
-  letter-spacing: -0.0871794969px;
+  letter-spacing: -0.08717949688434601px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
+
 }
 
 .when__duration {
@@ -394,9 +395,10 @@ a {
 }
 
 /* WHO */
+
 .who__container {
-  padding: 60px 135px 40px 135px;
-  background-color: #FFF;
+  padding: $saveBottomPadding;
+  background-color: $secondary;
 }
 
 .who__bar {
@@ -406,23 +408,27 @@ a {
 }
 
 .who__title {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 6px;
   text-align: center;
-  color: black;
+
+  color: $third;
+
   transform: translateX(5px);
+
 }
 
 .who__text {
-  color: black;
-  font-family: "SourceSansPro";
-  font-size: 19px;
-}
+  color: $third;
 
+  font-family: $SourceSansPro;
+  font-size: 19px;
+
+}
 .who__button__wrapper {
   display: grid;
   justify-items: center;
@@ -431,21 +437,26 @@ a {
 
 .who__button {
   padding: 20px 50px 20px 50px;
+
   background: #FF7E03;
-  color: #FFF;
+  color: $secondary;
+
   text-decoration: none;
-  font-family: "OpenSans";
+
+  font-family: $OpenSans;
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
   line-height: 23px;
   letter-spacing: 0px;
   text-align: center;
+
 }
 
 /*  GET READY */
+
 .ready__container {
-  padding: 60px 135px 40px 135px;
+  padding: $saveBottomPadding;
   background: linear-gradient(0deg, #FB923B, #FAA235 90%);
 }
 
@@ -456,21 +467,29 @@ a {
 }
 
 .ready__title {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 6px;
   text-align: center;
-  color: #FFF;
+
+  color: $secondary;
+
   transform: translateX(15px);
+
+
+
+
 }
 
 .ready__text {
-  color: #FFF;
-  font-family: "SourceSansPro";
+  color: $secondary;
+
+  font-family: $SourceSansPro;
   font-size: 19px;
+
 }
 
 .ready__content {
@@ -480,54 +499,58 @@ a {
 }
 
 .ready__content__text {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
-  color: #FFF;
+
+  color: $secondary;
 }
 
 .ready__list {
   margin-top: 100px;
   display: flex;
+
 }
 
 .ready__item {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 32px;
-  color: #FFF;
+  color: $secondary;
   margin-left: 147px;
 }
-
 .ready__item:nth-child(1) {
   margin-left: 0;
 }
 
 .ready__item__title {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 0px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
+
 }
 
 .ready__item__content {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.0365384743px;
+  letter-spacing: -0.03653847426176071px;
   text-align: left;
+
 }
 
 .ready__link {
-  color: #FFF;
+  color: $secondary;
 }
 
 .ready__bottom__button__wrapper {
@@ -537,20 +560,22 @@ a {
 
 .ready__bottom__button {
   padding: 21px 55px 21px 55px;
-  background-color: #FFF;
-  font-family: "OpenSans";
+  background-color: $secondary;
+  font-family: $OpenSans;
   font-size: 17px;
   font-style: normal;
   font-weight: 800;
   line-height: 23px;
   letter-spacing: 0px;
   text-align: center;
-  color: black;
+
+  color: $third;
+
 }
 
 /* ORGANIZER */
 .organizer__container {
-  padding: 60px 135px 0 135px;
+  padding: $savePadding;
 }
 
 .organizer__top__bar {
@@ -560,24 +585,30 @@ a {
 }
 
 .organizer__top__bar__text {
-  font-family: "FiraSansReg";
+  font-family: $FiraSansReg;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 6px;
   text-align: center;
+
+
   color: #4A4A4A;
+
   transform: translateX(10px);
+
+
 }
 
 .organizer__button {
   padding: 14px 40px 14px 40px;
-  background-color: #FFF;
-  border: 1px solid black;
-  color: black;
+  background-color: $secondary;
+  border: 1px solid $third;
+  color: $third;
   text-decoration: none;
-  font-family: "OpenSans";
+
+  font-family: $OpenSans;
   font-size: 17px;
   font-weight: 800;
 }
@@ -589,7 +620,7 @@ a {
 }
 
 .organizer__content {
-  font-family: "SourceSansLight";
+  font-family: $SourceSansLight;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
@@ -617,29 +648,33 @@ a {
 }
 
 .organizer__bottom_bar__text {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
+
 }
 
 .organizer__bar__button__wrapper {
   padding: 13px 32px 13px 32px;
+
   background-color: #FF7E03;
 }
 
 .organizer__bar__button {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
-  color: #FFF;
+
+  color: $secondary;
+
   text-decoration: none;
 }
 
@@ -656,24 +691,24 @@ a {
 }
 
 .copyright {
-  font-family: "SourceSansPro";
+  font-family: $SourceSansPro;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0px;
   text-align: left;
+
 }
 
 .email {
-  font-family: "SourceSansPro";
+  font-family:  $SourceSansPro;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0px;
   text-align: right;
+
   color: #FF7E03;
 }
-
-/*# sourceMappingURL=style.css.map */
